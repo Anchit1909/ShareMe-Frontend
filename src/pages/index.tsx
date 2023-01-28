@@ -5,6 +5,9 @@ import { useState } from "react";
 import RenderFile from "@/components/RenderFile";
 import axios from "axios";
 import DownloadFile from "@/components/DownloadFile";
+import Layout from "@/layout/Layout";
+import Hero from "@/components/Hero";
+import { Upload } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,9 +56,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="my-4 text-3xl font-medium">Got a File?</h1>
-          <div className="flex flex-col items-center justify-center bg-gray-800 shadow-xl w-96 rounded-xl">
+        <Layout>
+          <Hero />
+          <div className="flex flex-col mx-auto items-center mt-12  bg-white shadow-xl w-96 rounded-xl p-4 h-auto">
             {/* Drop Zone */}
             {!downloadPageLink && <DropZoneComponent setFile={setFile} />}
 
@@ -72,10 +75,11 @@ export default function Home() {
             {/* Upload Button */}
             {!downloadPageLink && file && (
               <button
-                className="p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none"
+                className="group mx-auto mt-6 flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black font-default"
                 onClick={handleUpload}
               >
-                Upload
+                <Upload className="h-5 w-5 text-white group-hover:text-black" />
+                <p>Upload file</p>
               </button>
             )}
             {downloadPageLink && (
@@ -91,7 +95,7 @@ export default function Home() {
               </div>
             )}
           </div>
-        </div>
+        </Layout>
       </main>
     </>
   );
