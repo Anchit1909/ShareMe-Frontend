@@ -27,12 +27,11 @@ const DropZoneComponent: FunctionComponent<{ setFile: Dispatch<any> }> = ({
       <input {...getInputProps()} />
       <div
         className={
-          "flex flex-col items-center h-auto space-y-6 border-2 border-dashed border-[#b6cef0] rounded-xl py-8" +
-          (isDragReject == true ? "border-red-500" : "") +
-          (isDragAccept == true ? "border-green-500" : "")
+          "flex flex-col items-center h-auto space-y-6 border-2 border-dashed border-[#b6cef0] rounded-xl py-8 " +
+          (isDragReject == true ? "border-red-300" : " ") +
+          (isDragAccept == true ? "border-green-300" : " ")
         }
       >
-        {/* <img src="/images/folder.png" alt="folder" className="w-16 h-16" /> */}
         <FileIcon />
         {isDragReject ? (
           <p className="font-default font-semibold text-sm text-center pb-2">

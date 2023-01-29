@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen">
+      <main className="min-h-screen w-full py-24">
         <Layout>
           <Hero />
           <div className="flex flex-col mx-auto items-center mt-12  bg-white shadow-xl w-96 rounded-xl p-4 h-auto mb-20">
@@ -79,7 +79,7 @@ export default function Home() {
                 onClick={handleUpload}
               >
                 <Upload className="h-5 w-5 text-white group-hover:text-black" />
-                <p>Upload file</p>
+                <p>{uploadState}</p>
               </button>
             )}
             {downloadPageLink && (

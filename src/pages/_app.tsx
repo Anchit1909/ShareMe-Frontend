@@ -16,7 +16,7 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_BASE_ENDPOINT;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
