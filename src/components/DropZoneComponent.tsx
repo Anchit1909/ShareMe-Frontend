@@ -22,7 +22,7 @@ const DropZoneComponent: FunctionComponent<{ setFile: Dispatch<any> }> = ({
   return (
     <div
       {...getRootProps()}
-      className="w-full h-[350px] rounded-md cursor-pointer focus:outline-none"
+      className="w-full h-[400px] rounded-md cursor-pointer focus:outline-none"
     >
       <input {...getInputProps()} />
       <div

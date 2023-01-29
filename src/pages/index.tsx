@@ -55,15 +55,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="min-h-screen">
         <Layout>
           <Hero />
-          <div className="flex flex-col mx-auto items-center mt-12  bg-white shadow-xl w-96 rounded-xl p-4 h-auto">
+          <div className="flex flex-col mx-auto items-center mt-12  bg-white shadow-xl w-96 rounded-xl p-4 h-auto mb-20">
             {/* Drop Zone */}
             {!downloadPageLink && <DropZoneComponent setFile={setFile} />}
 
             {/* Render File */}
-            {file && (
+            {file && !downloadPageLink && (
               <RenderFile
                 file={{
                   format: file.type.split("/")[1],
@@ -87,10 +87,11 @@ export default function Home() {
                 <DownloadFile downloadPageLink={downloadPageLink} />
                 {/* Email Form */}
                 <button
-                  className="p-2 my-5 bg-gray-900 rounded-md w-44 focus:outline-none"
+                  className="group mx-auto mt-6 flex max-w-fit items-center justify-center space-x-2 rounded-full border border-black bg-black px-5 py-2 text-sm text-white transition-colors hover:bg-white hover:text-black font-default"
                   onClick={resetComponent}
                 >
-                  Upload New File
+                  <Upload className="h-5 w-5 text-white group-hover:text-black" />
+                  <p>Upload new file</p>
                 </button>
               </div>
             )}
