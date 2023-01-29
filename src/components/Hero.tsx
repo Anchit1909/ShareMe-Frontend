@@ -8,7 +8,7 @@ const Hero = () => {
         href="https://twitter.com/nutlope/status/1615597965787435015"
         target="_blank"
         rel="noreferrer"
-        className="border rounded-2xl py-1 px-4 text-slate-500 text-sm hover:scale-105 transition duration-300 ease-in-out"
+        className="border rounded-2xl py-1 px-4 text-slate-500 text-sm hover:scale-105 transition duration-300 ease-in-out font-default"
       >
         Used by over <span className="font-semibold">55,000</span> happy
         customers
