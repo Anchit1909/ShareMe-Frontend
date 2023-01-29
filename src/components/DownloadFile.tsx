@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const DownloadFile = ({ downloadPageLink }) => {
+const DownloadFile = ({ downloadPageLink }: { downloadPageLink: any }) => {
   const [copy, setCopy] = useState<Boolean>(false);
   return (
     <>
