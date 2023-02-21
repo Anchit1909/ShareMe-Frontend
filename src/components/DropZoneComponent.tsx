@@ -34,16 +34,16 @@ const DropZoneComponent: FunctionComponent<{ setFile: Dispatch<any> }> = ({
       >
         <FileIcon />
         {isDragReject ? (
-          <p className="font-default font-semibold text-sm text-center pb-2">
+          <p className="pb-2 text-sm font-semibold text-center font-default">
             Sorry, This app only supports images and mp3.
           </p>
         ) : (
           <>
-            <div className="text-xl font-default font-semibold max-w-lg px-6 text-center">
+            <div className="max-w-lg px-6 text-xl font-semibold text-center font-default">
               <h1>Drag and drop your files or</h1>{" "}
               <span className="text-[#307BE5] underline">browse</span>
             </div>
-            <p className="font-default text-sm">
+            <p className="text-sm font-default">
               Only jpeg, png & mp3 files are supported.
             </p>
           </>

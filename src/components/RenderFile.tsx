@@ -9,9 +9,9 @@ const RenderFile: FunctionComponent<{ file: IFile }> = ({
     <div className="flex items-center justify-between w-full px-4 -mt-24">
       <div className="flex items-center justify-center">
         <img src={`/images/${format}.png`} alt="" className="w-14 h-14" />
-        <span className="mx-2 max-w-sm text-base font-default">{name}</span>
+        <span className="max-w-sm mx-2 text-base font-default">{name}</span>
       </div>
-      <span className="ml-auto font-default text-base">
+      <span className="ml-auto text-base font-default">
         {sizeInMB(sizeInBytes)}
       </span>
     </div>

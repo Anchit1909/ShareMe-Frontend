@@ -9,7 +9,7 @@ const DownloadFile = ({ downloadPageLink }: { downloadPageLink: any }) => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
         repudiandae.
       </h1> */}
-        <div className="flex items-center justify-between space-x-6 max-w-sm">
+        <div className="flex items-center justify-between max-w-sm space-x-6">
           <span className="break-all">{downloadPageLink}</span>
           <div onClick={() => setCopy(true)}>
             <img

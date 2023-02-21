@@ -16,8 +16,8 @@ export const Header = () => {
             : "bg-white/0"
         } z-30 transition-all`}
       >
-        <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-          <Link href="/" className="flex items-center font-display text-2xl">
+        <div className="flex items-center justify-between h-16 max-w-screen-xl mx-5 xl:mx-auto">
+          <Link href="/" className="flex items-center text-2xl font-display">
             <Logo />
             <p className="font-semibold">ShareMe.</p>
           </Link>

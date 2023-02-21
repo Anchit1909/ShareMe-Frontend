@@ -3,17 +3,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-1 w-full space-y-5 flex-col items-center justify-center text-center px-4 mt-10">
+    <div className="flex flex-col items-center justify-center flex-1 w-full px-4 mt-10 space-y-5 text-center">
       <a
         href="https://twitter.com/nutlope/status/1615597965787435015"
         target="_blank"
         rel="noreferrer"
-        className="border rounded-2xl py-1 px-4 text-slate-500 text-sm hover:scale-105 transition duration-300 ease-in-out font-default"
+        className="px-4 py-1 text-sm transition duration-300 ease-in-out border rounded-2xl text-slate-500 hover:scale-105 font-default"
       >
         Used by over <span className="font-semibold">55,000</span> happy
         customers
       </a>
-      <h1 className="mx-auto max-w-sm font-display text-4xl font-bold tracking-normal text-slate-900 md:text-5xl md:max-w-lg">
+      <h1 className="max-w-sm mx-auto text-4xl font-bold tracking-normal font-display text-slate-900 md:text-5xl md:max-w-lg">
         <span className="relative whitespace-nowrap text-[#3290EE]">
           {/* <SquigglyLines /> */}
           <span className="relative">Share</span>

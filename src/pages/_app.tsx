@@ -20,7 +20,7 @@ axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_BASE_ENDPOINT;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="bg-gradient-to-br from-[#B5FFD9]/20 to-[#EEB0EC]/20">
+    <div className="bg-gradient-to-br from-[#B5FFD9]/40 to-[#EEB0EC]/40">
       <main className={cx(clash.variable, poppins.variable)}>
         <Component {...pageProps} />
       </main>
