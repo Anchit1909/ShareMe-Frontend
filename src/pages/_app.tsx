@@ -8,12 +8,14 @@ import cx from "classnames";
 const clash = localFont({
   src: "../styles/ClashDisplay-Variable.ttf",
   variable: "--font-clash",
+  display: "swap",
 });
 
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["400", "600", "700"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_BASE_ENDPOINT;

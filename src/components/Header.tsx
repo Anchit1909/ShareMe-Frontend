@@ -6,7 +6,7 @@ import Github from "../components/Icons/GithubLogo";
 import Twitter from "../components/Icons/TwitterLogo";
 
 export const Header = () => {
-  const scrolled = useScroll(50);
+  const scrolled = useScroll(20);
   return (
     <>
       <div
