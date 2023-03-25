@@ -14,7 +14,7 @@ export const Header = () => {
           scrolled
             ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
             : "bg-white/0"
-        } z-30 transition-all`}
+        } z-30 transition-opacity`}
       >
         <div className="flex items-center justify-between h-16 max-w-screen-xl mx-5 xl:mx-auto">
           <Link href="/" className="flex items-center text-2xl font-display">
