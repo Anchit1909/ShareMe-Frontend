@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         display: ["var(--font-clash)"],
         default: ["var(--font-poppins)", "system-ui", "sans-serif"],
+        
       },
     },
   },
