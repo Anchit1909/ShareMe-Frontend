@@ -25,7 +25,7 @@
 </p>
 <br/>
 
-> This is the frontend part of this application. To access the backend part, please go to this repo[ShareMe-Backend](https://github.com/Anchit1909/ShareMe-Backend)
+> This is the frontend part of this application. To access the backend part, please go to this repo:[ShareMe-Backend](https://github.com/Anchit1909/ShareMe-Backend)
 
 ## Introduction
 
