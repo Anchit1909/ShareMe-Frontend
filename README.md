@@ -25,6 +25,8 @@
 </p>
 <br/>
 
+> This is the frontend part of this application. To access the backend part, please go to this repo -> [ShareMe-Backend](https://github.com/Anchit1909/ShareMe-Backend)
+
 ## Introduction
 
 ShareMe is a file sharing web app that generates links to share files of multiple formats among different users without any need to create an account.
